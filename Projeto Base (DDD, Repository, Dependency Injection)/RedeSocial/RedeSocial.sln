@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35323.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{954DCF84-54D0-4EF1-A139-80ADFA9274E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.API", "src\RedeSocial.API\RedeSocial.API.csproj", "{4E889174-139E-4D34-ACB9-F5DEEAA84553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.Application", "src\RedeSocial.Application\RedeSocial.Application.csproj", "{88749C71-B243-4CF6-8364-776F98CC6CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.Domain", "src\RedeSocial.Domain\RedeSocial.Domain.csproj", "{A9C5EFD4-F2CD-46DF-ADF1-8B7C65800234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.Infra.Data", "src\RedeSocial.Infra.Data\RedeSocial.Infra.Data.csproj", "{5FA0DE37-D0E5-4D18-95E7-7AB7085455EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedeSocial.Infra.IoC", "src\RedeSocial.Infra.IoC\RedeSocial.Infra.IoC.csproj", "{E9A2C72C-C9C2-4CF5-9D0F-460216F1118A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E889174-139E-4D34-ACB9-F5DEEAA84553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E889174-139E-4D34-ACB9-F5DEEAA84553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E889174-139E-4D34-ACB9-F5DEEAA84553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E889174-139E-4D34-ACB9-F5DEEAA84553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88749C71-B243-4CF6-8364-776F98CC6CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88749C71-B243-4CF6-8364-776F98CC6CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88749C71-B243-4CF6-8364-776F98CC6CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88749C71-B243-4CF6-8364-776F98CC6CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C5EFD4-F2CD-46DF-ADF1-8B7C65800234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C5EFD4-F2CD-46DF-ADF1-8B7C65800234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C5EFD4-F2CD-46DF-ADF1-8B7C65800234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C5EFD4-F2CD-46DF-ADF1-8B7C65800234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA0DE37-D0E5-4D18-95E7-7AB7085455EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA0DE37-D0E5-4D18-95E7-7AB7085455EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA0DE37-D0E5-4D18-95E7-7AB7085455EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA0DE37-D0E5-4D18-95E7-7AB7085455EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A2C72C-C9C2-4CF5-9D0F-460216F1118A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A2C72C-C9C2-4CF5-9D0F-460216F1118A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A2C72C-C9C2-4CF5-9D0F-460216F1118A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A2C72C-C9C2-4CF5-9D0F-460216F1118A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E889174-139E-4D34-ACB9-F5DEEAA84553} = {954DCF84-54D0-4EF1-A139-80ADFA9274E8}
+		{88749C71-B243-4CF6-8364-776F98CC6CEB} = {954DCF84-54D0-4EF1-A139-80ADFA9274E8}
+		{A9C5EFD4-F2CD-46DF-ADF1-8B7C65800234} = {954DCF84-54D0-4EF1-A139-80ADFA9274E8}
+		{5FA0DE37-D0E5-4D18-95E7-7AB7085455EE} = {954DCF84-54D0-4EF1-A139-80ADFA9274E8}
+		{E9A2C72C-C9C2-4CF5-9D0F-460216F1118A} = {954DCF84-54D0-4EF1-A139-80ADFA9274E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95F96F3C-CCA6-479C-B149-832F812B2045}
+	EndGlobalSection
+EndGlobal

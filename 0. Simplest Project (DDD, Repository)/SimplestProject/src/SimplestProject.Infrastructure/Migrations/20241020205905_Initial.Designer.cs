@@ -11,7 +11,7 @@ using SimplestProject.Infrastructure.Context;
 namespace SimplestProject.Infrastructure.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241020204838_Initial")]
+    [Migration("20241020205905_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

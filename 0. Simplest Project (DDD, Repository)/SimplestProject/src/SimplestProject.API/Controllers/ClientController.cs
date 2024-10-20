@@ -18,6 +18,12 @@ namespace SimplestProject.API.Controllers
         public async Task<ActionResult<GetClientResponse>> GetClientByIdAsync(int id)
         {
             var client = await _clientService.GetClientByIdAsync(id);
+
+            if (client == null)
+            {
+                return NotFound();
+            }
+
             var getClientResponse = new GetClientResponse
             {
                 Id = client.Id,

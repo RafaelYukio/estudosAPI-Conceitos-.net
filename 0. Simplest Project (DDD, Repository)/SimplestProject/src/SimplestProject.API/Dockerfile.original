@@ -13,9 +13,6 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/SimplestProject.API/SimplestProject.API.csproj", "src/SimplestProject.API/"]
-COPY ["src/SimplestProject.Application/SimplestProject.Application.csproj", "src/SimplestProject.Application/"]
-COPY ["src/SimplestProject.Domain/SimplestProject.Domain.csproj", "src/SimplestProject.Domain/"]
-COPY ["src/SimplestProject.Infrastructure/SimplestProject.Infrastructure.csproj", "src/SimplestProject.Infrastructure/"]
 RUN dotnet restore "./src/SimplestProject.API/SimplestProject.API.csproj"
 COPY . .
 WORKDIR "/src/src/SimplestProject.API"

@@ -1,13 +1,17 @@
 using Microsoft.EntityFrameworkCore;
+using SimplestProject.Domain.Interfaces.Repositories;
 using SimplestProject.Domain.Interfaces.Services;
 using SimplestProject.Domain.Services;
 using SimplestProject.Infrastructure.Context;
+using SimplestProject.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddScoped<IClientService, ClientService>();
+
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
 
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection")));

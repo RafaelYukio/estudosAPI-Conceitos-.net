@@ -7,7 +7,7 @@ namespace SimplestProject.Infrastructure.Context
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         public DbSet<Client> Clients { get; set; }

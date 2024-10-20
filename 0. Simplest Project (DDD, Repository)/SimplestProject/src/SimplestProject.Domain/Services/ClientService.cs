@@ -1,19 +1,21 @@
 ﻿using SimplestProject.Domain.Entities;
+using SimplestProject.Domain.Interfaces.Repositories;
 using SimplestProject.Domain.Interfaces.Services;
 
 namespace SimplestProject.Domain.Services
 {
     public class ClientService : IClientService
     {
-        public async Task<Client> GetClientByIdAsync(int id)
-        {
-            var client = new Client()
-            {
-                Id = 1,
-                Name = "Test",
-                Age = 10,
-            };
+        private readonly IClientRepository _clientRepository;
 
+        public ClientService(IClientRepository clientRepository)
+        {
+            _clientRepository = clientRepository;
+        }
+
+        public async Task<Client?> GetClientByIdAsync(int id)
+        {
+            var client = await _clientRepository.GetClientByIdAsync(id);
             return client;
         }
     }

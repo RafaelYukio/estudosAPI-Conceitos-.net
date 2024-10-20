@@ -5,8 +5,9 @@ namespace RedeSocial.Domain.Entities
 {
     public class Pet : BaseEntity
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
         public PetType PetType { get; set; } 
+        public Person Owner { get; set; }
     }
 }
